@@ -31,8 +31,8 @@ const memoizeWith = (memoizer = (...args) => args.toString()) => (
 
 const AppState = React.createContext({ state: {} });
 
-console.log(AppState.Provider.displayName);
-console.log(AppState.Consumer);
+// console.log(AppState.Provider.displayName);
+// console.log(AppState.Consumer);
 
 class AppStateProvider extends React.Component {
   static propTypes = {

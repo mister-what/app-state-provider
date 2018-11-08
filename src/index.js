@@ -90,7 +90,7 @@ const MyBoundNameChanger = connectAppState(mapStateToProps, (dispatch, { id }) =
   setNameReducer: pipe(
     nameActionCreator(id),
     action => {
-      console.log(action);
+      // console.log(action);
       return action;
     },
     dispatch

@@ -1,32 +1,27 @@
 {
   "name": "app-state-provider",
-  "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "src/index.js",
-  "dependencies": {
-    "@babel/plugin-proposal-class-properties": "7.1.0",
-    "@babel/preset-env": "7.1.0",
-    "babel-plugin-ramda": "1.6.3",
-    "babel-preset-react": "6.24.1",
-    "prop-types": "15.6.2",
-    "ramda": "0.25.0",
-    "react": "16.6.0",
-    "react-dom": "16.6.0",
-    "react-scripts": "2.1.1",
-    "recompose": "0.30.0"
-  },
-  "devDependencies": {},
+  "version": "0.0.0",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "build": "babel -d lib src"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "dependencies": {
+    "ramda": "^0.25.0",
+    "recompose": "^0.30.0",
+    "prop-types": "15.6.2"
+  },
+  "devDependencies": {
+    "@types/prop-types": "^15.5.6",
+    "@types/ramda": "^0.25.41",
+    "@types/react": "^16.4.18",
+    "@types/recompose": "^0.27.0",
+    "babel-plugin-ramda": "1.6.3",
+    "prettier": "^1.15.1",
+    "react": "16.6.1",
+    "react-dom": "16.6.1",
+    "typescript": "^3.1.6"
+  },
+  "peerDependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  }
 }
